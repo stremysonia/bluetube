@@ -8,14 +8,15 @@ import "./App.css";
 
 function App() {
   const [video, setVideo] = useState([]);
-  const [selectedvideo, setSelectedVideo] = useState(null);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const handleSubmit = async (searchTerm) => {
+    const API = `${process.env.REACT_APP_API_KEY}`;
     const resp = await youtube.get("search", {
       params: {
         part: "snippet",
         maxResults: 10,
-        key: "AIzaSyBj3J88Ee2LnBYl2TMrz82SebxBgGp9-KU",
+        key: `${API}`,
       },
     });
     setVideo(resp.data.items);
@@ -24,7 +25,6 @@ function App() {
     console.log(resp);
   };
 
-  const handleVideoSelect = (video) => {};
   return (
     <Grid justify="center" container spacing={10}>
       <Grid item xs={8}>
@@ -33,7 +33,7 @@ function App() {
             <SearchBar onFormSubmit={handleSubmit} />
           </Grid>
           <Grid item xs={6}>
-            <VideoDetail />
+            <VideoDetail video={selectedVideo} />
           </Grid>
           <Grid item xs={4}>
             <VideoList />
