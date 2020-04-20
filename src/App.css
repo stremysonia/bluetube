@@ -1,6 +1,44 @@
 .App {
   text-align: center;
 }
+#pythonDiv {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 155, 0.685);
+
+  text-align: center;
+}
+#jsDiv {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#reactDiv {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#rubyDiv {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#mainCatDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 .App-logo {
   height: 40vmin;
