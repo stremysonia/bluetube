@@ -5,13 +5,14 @@
   width: 200px;
   height: 200px;
   background-color: rgba(0, 0, 155, 0.685);
-
+  overflow: hidden;
   text-align: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 #jsDiv {
   width: 200px;
   height: 200px;
-  background-color: aquamarine;
+  background-color: rgba(63, 191, 161, 0.685);
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
@@ -19,7 +20,7 @@
 #reactDiv {
   width: 200px;
   height: 200px;
-  background-color: aquamarine;
+  background-color: rgba(234, 95, 26, 0.83);
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
@@ -38,6 +39,11 @@
   justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+}
+#videoDiv {
+  width: 800px;
+  height: 100px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .App-logo {
@@ -66,11 +72,24 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+#blue,
+#yellow {
+  height: 50px;
+  width: 50px;
+  animation: spin 3s infinite;
+}
+
+@keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: scale(0.75);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(0.45);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }

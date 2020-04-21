@@ -1,7 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import App from "../App";
+import Iframe from "react-iframe";
 
 const VideoList = ({ video }) => {
   return (
@@ -10,7 +8,15 @@ const VideoList = ({ video }) => {
         video.map((item) => {
           return (
             <div>
-              <h1>{item.snippet.title}</h1>
+              <div id="videoDiv">
+                <Iframe
+                  src={item.snippet.thumbnails.default.url}
+                  width="200px"
+                  height="200px"
+                  border="1px solid lightgrey"
+                />
+                <h3>{item.snippet.title}</h3>
+              </div>
             </div>
           );
         })}
