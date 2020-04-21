@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import SearchBar from "./components/SearchBar";
 import VideoDetail from "./components/VideoDetail";
 import VideoList from "./components/VideoList";
 import youtube from "./api/youtube";
 import Category from "./components/Category";
+
 import "./App.css";
 
 function App() {
@@ -16,15 +17,17 @@ function App() {
     const resp = await youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: 10,
+        maxResults: 5,
         key: `${API}`,
+        q: searchTerm,
       },
     });
     setVideo(resp.data.items);
     setSelectedVideo(resp.data.items[0]);
-
-    console.log(video);
   };
+  useEffect(() => {
+    handleSubmit();
+  }, []);
 
   return (
     <div>
@@ -32,13 +35,13 @@ function App() {
         <SearchBar onFormSubmit={handleSubmit} />
       </div>
       <div>
-        <Category />
+        <Category onSubmit={handleSubmit} />
       </div>
       <div>
-        <VideoDetail video={selectedVideo} />
+        <VideoDetail onVideoSelect={selectedVideo} video={video} />
       </div>
       <div>
-        <VideoList video={video} />
+        {/* <VideoList onVideoSelect={setSelectedVideo} video={video} /> */}
       </div>
     </div>
   );
