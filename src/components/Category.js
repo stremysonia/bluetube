@@ -1,10 +1,13 @@
 import React from "react";
 import Python from "./Python";
 
-const Category = () => {
+const Category = ({ onSubmit }) => {
+  const onClick = () => {
+    onSubmit("python");
+  };
   return (
     <div id="mainCatDiv">
-      <div id="pythonDiv">
+      <div id="pythonDiv" onClick={onClick}>
         <Python />
         <h1>Python</h1>
         <p>
@@ -14,6 +17,7 @@ const Category = () => {
           maintenance.
         </p>
       </div>
+
       <div id="jsDiv">
         <h1>Javascript</h1>
       </div>

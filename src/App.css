@@ -9,6 +9,9 @@
   text-align: center;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
+#pythonDiv:hover {
+  cursor: pointer;
+}
 #jsDiv {
   width: 200px;
   height: 200px;
@@ -40,9 +43,9 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-#videoDiv {
+#mainVidDiv {
   width: 800px;
-  height: 100px;
+  height: 400px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
