@@ -27,6 +27,21 @@ const Category = ({ onSubmit }) => {
       <div id="rubyDiv">
         <h1>Ruby</h1>
       </div>
+      <div id="htmlDiv">
+        <h1>HTML</h1>
+      </div>
+      <div id="cssDiv">
+        <h1>CSS</h1>
+      </div>
+      <div id="cDiv">
+        <h1>C#</h1>
+      </div>
+      <div id="c2Div">
+        <h1>C++</h1>
+      </div>
+      <div id="javaDiv">
+        <h1>Java</h1>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 #pythonDiv {
   width: 200px;
@@ -36,12 +38,57 @@
   margin-left: auto;
   text-align: center;
 }
+#htmlDiv {
+  width: 200px;
+  height:200px;
+  background-color: rgba(234, 95, 26, 0.83);
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#cssDiv {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#cDiv {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#c2Div {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+#javaDiv {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-left: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+
 #mainCatDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4em;
+  padding: 5em;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
 }
 #mainVidDiv {
   width: 800px;

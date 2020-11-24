@@ -5,8 +5,10 @@ import VideoDetail from "./components/VideoDetail";
 import VideoList from "./components/VideoList";
 import youtube from "./api/youtube";
 import Category from "./components/Category";
+import Navbar from "./components/NavBar";
 
 import "./App.css";
+
 
 function App() {
   const [video, setVideo] = useState([]);
@@ -41,7 +43,7 @@ function App() {
         <VideoDetail onVideoSelect={selectedVideo} video={video} />
       </div>
       <div>
-        {/* <VideoList onVideoSelect={setSelectedVideo} video={video} /> */}
+        {/* <NavBar onFormSubmit={handleSubmit} /> */}
       </div>
     </div>
   );
