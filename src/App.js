@@ -6,8 +6,8 @@ import VideoList from "./components/VideoList";
 import youtube from "./api/youtube";
 import Category from "./components/Category";
 import NavBar from "./components/NavBar";
-
 import "./App.css";
+import Logo from "./components/Logo";
 
 
 function App() {
@@ -44,6 +44,9 @@ function App() {
       </div>
       <div>
         <NavBar onFormSubmit={handleSubmit} />
+      </div>
+      <div>
+        {/* <Logo onSubmit={handleSubmit}/> */}
       </div>
     </div>
   );

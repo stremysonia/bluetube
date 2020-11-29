@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "../components/SearchBar"
+import Logo from "../components/Logo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +13,7 @@ const NavBar = () => {
   return (
     <>
       <div className="navbar-container">
-        
+          <Logo></Logo>
           <SearchBar></SearchBar>
             
             <FontAwesomeIcon
@@ -33,5 +34,5 @@ const NavBar = () => {
       </div>
     </>
   );
-};
+}
 export default NavBar;

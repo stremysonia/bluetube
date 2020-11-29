@@ -14,18 +14,15 @@ const SearchBar = ({ onFormSubmit }) => {
   };
 
   return (
-    // <SearchIcon>
-    // <IconButton style={{padding:"5px"}}>
     <Paper elevation={0} style={{ padding: "25px" }}>
       <TextField
-        fullWidth
+        // size="medium"
+        variant="outlined"
         label="Search..."
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyPress={onKeyPress}
       ></TextField>
     </Paper>
-    // </IconButton>
-    // </SearchIcon>
   );
 };
 export default SearchBar;

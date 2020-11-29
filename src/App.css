@@ -92,6 +92,15 @@
   margin: 2em 2em 2em 2em;
 }
 
+.blutube-logo {
+  color: blue;
+}
+
+.logo-name {
+  font-weight: lighter;
+  letter-spacing: .1rem;
+}
+
 #mainCatDiv {
   /* display: flex; */
   display: grid;
