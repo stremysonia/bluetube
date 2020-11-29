@@ -79,6 +79,19 @@
   text-align: center;
 }
 
+.navbar-container {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.icon {
+  color: gray;
+  margin: 2em 2em 2em 2em;
+}
+
 #mainCatDiv {
   /* display: flex; */
   display: grid;

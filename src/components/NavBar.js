@@ -1,20 +1,37 @@
-import React from "react"
+import React from "react";
+import SearchBar from "../components/SearchBar"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+
+library.add(fas)
 
 
 const NavBar = () => {
-    return (
-            <>
-                <div className="navbar-container">
-                        {/* <FontAwesomeIcon  */}
-                        icon={[ , ]}
-                        className="navbar-hambuger icons"/>
+  return (
+    <>
+      <div className="navbar-container">
+        
+          <SearchBar></SearchBar>
+            
+            <FontAwesomeIcon
+            icon={[ 'fas', 'search']}
+            className="search-icon icon" size="s"/>
 
-                            <link exact to="/" className="link"> 
-                                <span className="logo">BluTube</span>
-                            </link>
+              <FontAwesomeIcon
+              icon={[ 'fas', 'video']}
+              className="video-icon icon" size="s"/>
 
-                </div>
-            </>
-    );
-}
+                <FontAwesomeIcon
+                icon={[ 'fas', 'bell']}
+                className="bell-icon icon" size="s"/>
+
+                  <FontAwesomeIcon
+                  icon={[ 'fas', 'user-circle']}
+                  className="user-circle-icon icon" size="s"/>
+      </div>
+    </>
+  );
+};
 export default NavBar;

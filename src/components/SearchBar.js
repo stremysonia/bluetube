@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Paper, TextField } from "@material-ui/core";
+import { Paper, TextField, SearchIcon, IconButton } from "@material-ui/core";
 import Category from "./Category";
 
 const SearchBar = ({ onFormSubmit }) => {
@@ -14,6 +14,8 @@ const SearchBar = ({ onFormSubmit }) => {
   };
 
   return (
+    // <SearchIcon>
+    // <IconButton style={{padding:"5px"}}>
     <Paper elevation={0} style={{ padding: "25px" }}>
       <TextField
         fullWidth
@@ -22,6 +24,8 @@ const SearchBar = ({ onFormSubmit }) => {
         onKeyPress={onKeyPress}
       ></TextField>
     </Paper>
+    // </IconButton>
+    // </SearchIcon>
   );
 };
 export default SearchBar;

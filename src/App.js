@@ -5,7 +5,7 @@ import VideoDetail from "./components/VideoDetail";
 import VideoList from "./components/VideoList";
 import youtube from "./api/youtube";
 import Category from "./components/Category";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 
 import "./App.css";
 
@@ -34,7 +34,7 @@ function App() {
   return (
     <div>
       <div>
-        <SearchBar onFormSubmit={handleSubmit} />
+        {/* <SearchBar onFormSubmit={handleSubmit} /> */}
       </div>
       <div>
         <Category onSubmit={handleSubmit} />
@@ -43,7 +43,7 @@ function App() {
         <VideoDetail onVideoSelect={selectedVideo} video={video} />
       </div>
       <div>
-        {/* <NavBar onFormSubmit={handleSubmit} /> */}
+        <NavBar onFormSubmit={handleSubmit} />
       </div>
     </div>
   );
