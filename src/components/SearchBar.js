@@ -14,10 +14,10 @@ const SearchBar = ({ onFormSubmit }) => {
   };
 
   return (
-    <Paper elevation={0} style={{ padding: "25px" }}>
+    <Paper elevation={0} style={{ padding: "5px" }}>
       <TextField
         // size="medium"
-        variant="outlined"
+        // variant="outlined"
         label="Search..."
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyPress={onKeyPress}

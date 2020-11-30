@@ -4,8 +4,8 @@
   padding: 0;
 }
 #pythonDiv {
-  width: 200px;
-  height: 200px;
+  width: 360px;
+  height: 360px;
   background-color: rgba(0, 0, 155, 0.685);
   overflow: hidden;
   text-align: center;
@@ -15,75 +15,99 @@
   cursor: pointer;
 }
 #jsDiv {
-  width: 200px;
-  height: 200px;
-  background-color: rgba(63, 191, 161, 0.685);
+  width: 360px;
+  height: 360px;
+  /* background-color: rgba(63, 191, 161, 0.685); */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
+  /* border-radius: 16px; */
 }
 #reactDiv {
-  width: 200px;
-  height: 200px;
-  background-color: rgba(234, 95, 26, 0.83);
+  width: 360px;
+  height: 360px;
+  /* background-color: rgba(234, 95, 26, 0.83); */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
 }
 #rubyDiv {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
+  width: 360px;
+  height: 360px;
+  /* background-color: aquamarine; */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
 }
 #htmlDiv {
-  width: 200px;
-  height:200px;
-  background-color: rgba(234, 95, 26, 0.83);
+  width: 360px;
+  height: 360px;
+  /* background-color: rgba(234, 95, 26, 0.83); */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
 }
 #cssDiv {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
+  width: 360px;
+  height: 360px;
+  /* background-color: aquamarine; */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
 }
 #cDiv {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
+  width: 360px;
+  height: 360px;
+  /* background-color: aquamarine; */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
 }
 #c2Div {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
+  width: 360px;
+  height: 360px;
+  /* background-color: aquamarine; */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
 }
 #javaDiv {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
+  width: 360px;
+  height: 360px;
+  /* background-color: aquamarine; */
   padding-left: 10px;
   margin-left: auto;
   text-align: center;
+}
+
+.div {
+  /* border-radius: 16px; */
+  /* border: 2px solid ; */
+  background-color: lightgrey;
+  /* letter-spacing: 2px; */
+  /* font-weight: lighter; */
+  /* font-size: 16px; */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  /* display: flex; */
+  position: relative;
+  top: 40%;
+  /* bottom: 40%; */
+}
+
+.description {
+  position: relative;
+  top: 40%;
+  padding: 5px 5px 5px 5px;
 }
 
 .navbar-container {
   left: 0;
   top: 0;
   position: fixed;
-  width: 100%;
+  width: 40%;
   z-index: 1;
 }
 
@@ -112,11 +136,11 @@
   /* margin-right: 10px; */
   /* margin-left: 10px; */
 }
-#mainVidDiv {
+/* #mainVidDiv {
   width: 800px;
   height: 400px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .App-logo {
   height: 40vmin;
